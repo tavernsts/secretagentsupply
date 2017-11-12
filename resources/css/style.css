@@ -1,0 +1,46 @@
+/* full page */
+html {
+  font-family: Helvetica;
+  font-size: 18px;
+  color: white;
+  background-color: black;
+  opacity: 0.9;
+  justify-content: center;
+  margin-top: 0;
+}
+
+/* Logo */
+
+.company .container {
+  display: flex;
+  align-items: center;
+  padding: 12px 0 12px 0.5em;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.company img {
+  height: 1.5em;
+  padding-right: 15px;
+}
+
+body {
+  line-height: 1.4em;
+}
+
+/* Banner */
+
+
+/* Navigation */
+
+
+/* Product */
+
+
+/* Business Info */
+
+
+/* Footer */
