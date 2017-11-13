@@ -1,46 +1,234 @@
-/* full page */
-html {
-  font-family: Helvetica;
-  font-size: 18px;
-  color: white;
+html{
+  font-family: helvetica;
   background-color: black;
-  opacity: 0.9;
-  justify-content: center;
-  margin-top: 0;
 }
 
-/* Logo */
-
-.company .container {
-  display: flex;
-  align-items: center;
-  padding: 12px 0 12px 0.5em;
-}
-
-.container {
+.container{
   max-width: 960px;
   margin: 0 auto;
 }
 
-.company img {
-  height: 1.5em;
-  padding-right: 15px;
+
+.logo-bar{
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: .66rem 0;
 }
 
-body {
-  line-height: 1.4em;
+.logo-bar img{
+  padding: 0 0.5rem;
+  height: 1.5rem;
 }
 
-/* Banner */
+.logo-bar p{
+  font-family: helvetica;
+  font-size: 1 rem;
+}
 
+.feature-bar{
+  height: 25rem;
+  background: url("https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: block;
+}
 
-/* Navigation */
+.feature-box{
+  width: 20rem;
+  background-color: black;
+  color: white;
+  display: block;
+  padding: 2rem 3rem;
+  margin-left: 1rem;
+  position: relative;
+  top: 9rem;
+}
 
+.feature-box p{
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom:. 25rem;
+}
 
-/* Product */
+.feature-box h1{
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: .25rem;
+}
 
+.nav nav{
+  background-color: firebrick;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: .75rem 0;
+}
 
-/* Business Info */
+.mobile-nav{
+  display: none;
+}
 
+a{
+  color: white;
+  text-decoration: none;
+}
 
-/* Footer */
+.content{
+  background-color: white;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+  flex-direction: column;
+}
+
+.products{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3rem;
+}
+
+.spotlight-box{
+  display: block;
+  align-content: center;
+  border: 4px solid black;
+  width: 30%;
+  text-align: center;
+}
+
+.description{
+  display: block;
+  color: white;
+  background-size: auto;
+  background-color: black;
+  padding: .5rem;
+}
+
+.spotlight-box img{
+  diplay: flex;
+  height: 9rem;
+  padding: 2rem 0;
+  max-width: 8rem;
+}
+
+.details{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  margin: 1rem;
+}
+
+.detail-box{
+  display: block;
+  flex-direction: column;
+  width: 35%;
+}
+
+.title{
+  background-color: black;
+  display: block;
+  margin-top: 1rem;
+  color: white;
+  padding: 1rem;
+}
+
+.text{
+  display: block;
+  margin-bottom: 4rem;
+  margin-top: .5rem;
+}
+
+.footer{
+  height: 5rem;
+  color: white;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 1024px){
+  #glasses{
+    display: none;
+  }
+
+  .spotlight-box{
+    width: 47%;
+  }
+
+  .mobile-nav{
+    display: block;
+    background-color: firebrick;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .75rem 0;
+  }
+
+  .nav nav{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 470px){
+  .feature-bar{
+    height: 15rem;
+  }
+
+  .feature-box{
+    width: 90%;
+    background-color: black;
+    color: white;
+    display: block;
+    top: 9rem;
+    margin-left: 0;
+  }
+
+  .feature-box p{
+    font-size: .77rem;
+  }
+
+  .feature-box h1{
+    font-size: 1rem;
+  }
+
+  #watch{
+    display: none;
+  }
+
+  .spotlight-box{
+    width: 90%;
+    justify-content: center;
+  }
+
+  .details{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2rem;
+    width: 90%;
+  }
+
+  .detail-box{
+    display: block;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: .1rem;
+  }
+
+  .title{
+    background-color: black;
+    display: block;
+    color: white;
+  }
+
+  .text{
+    display: block;
+  }
+
+  .footer{
+    text-align: center;
+  }
